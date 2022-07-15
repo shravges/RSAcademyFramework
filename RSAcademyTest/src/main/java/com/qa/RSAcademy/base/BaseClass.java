@@ -17,6 +17,7 @@ import org.testng.annotations.BeforeSuite;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+import com.google.common.io.Files;
 import com.qa.RSAcademy.util.TestUtil;
 import com.qa.RSAcademy.util.WebEventListener;
 
@@ -110,9 +111,12 @@ public class BaseClass
 	
 	
 	@AfterSuite
-	public void closure()
+	public void closure() throws IOException
 	{
 		extent.flush();
+		File src = new File(currentExecutionPath+ "/" +"ExecutionSummary.html");
+		File dest = new File("C:\\RSAcademyTest_Output\\ExecutionSummary.html");
+		Files.copy(src,dest);
 	}
 	
 
