@@ -40,7 +40,7 @@ public class BaseClass
 		try
 		{
 			prop = new Properties();
-			FileInputStream ip = new FileInputStream("C:\\MyFrameworkDesignPractice\\RSAcademyTest\\src\\main\\java\\com\\qa\\RSAcademy\\config\\config.properties");
+			FileInputStream ip = new FileInputStream("C:\\Users\\Shilps\\git\\RSAcademyFramework\\RSAcademyTest\\src\\main\\java\\com\\qa\\RSAcademy\\config\\config.properties");
 			prop.load(ip);
 		}
 		catch(FileNotFoundException e)

@@ -23,7 +23,7 @@ public class TestUtil extends BaseClass
 {
 	public static long PAGE_LOAD_TIMEOUT = 20;
 	public static long IMPLICIT_WAIT = 20;
-	public static String inputDataFile = "C:\\MyFrameworkDesignPractice\\RSAcademyTest\\src\\main\\java\\com\\qa\\RSAcademy\\testdata\\RSAcademy_TestData.xlsx";
+	public static String inputDataFile = "C:\\Users\\Shilps\\git\\RSAcademyFramework\\RSAcademyTest\\src\\main\\java\\com\\qa\\RSAcademy\\testdata\\RSAcademy_TestData.xlsx";
 	public static String outputFilePath = "C:\\RSAcademyTest_Output\\";
 	
 	
